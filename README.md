@@ -42,11 +42,13 @@ The ETL-D engine processes every request through a strict hierarchy:
     }
   }
 }
-💳 How to get an API Key?
+```
+
+🔑 How to Get an API Key?
 Option A: Manual Purchase (Human)
 Get a Starter Pack ($5 / 5,000 credits) or a Subscription at api.etl-d.net.
 
-Option B: Zero-Touch Provisioning (Agent-Led)
+Option B: Zero-Touch Provisioning (Agent-Led) 🤖
 If you don't have a key, simply ask Claude: "I don't have an ETL-D key, can you help me get one?".
 The agent will call the /provision tool, generate a Stripe Checkout link for you, and automatically set up the key once paid. Zero-touch, human-in-the-loop.
 
@@ -54,7 +56,7 @@ The agent will call the /provision tool, generate a Stripe Checkout link for you
 1. Financial & B2B Heavy Lifting
 parse_bank_statement: Support for Spanish Norma 43 (N43). Turns raw bank files into clean JSON.
 
-parse_trade_history: Extraction of trades, fees, and dividends from complex broker exports.
+parse_trade_history: Deterministic extraction of trades, fees, and dividends from complex broker exports.
 
 parse_edi: ANSI X12 EDI parser (Optimized for 850 Purchase Orders).
 
@@ -63,14 +65,14 @@ generate_sepa_xml: JSON to PAIN.008 (Direct Debit) XML generator.
 2. Document Intelligence
 pdf_to_spatial_markdown: Crucial for Agents. Converts PDFs to Markdown preserving table structures before the LLM reads them.
 
-extract_invoice / extract_resume: High-accuracy schema extraction.
+extract_invoice / extract_resume: High-accuracy schema extraction for standard B2B documents.
 
 3. Atomic Enrichment (1 Credit/call)
-enrich_amount: Cleans "1.240,50€" into {amount: 1240.50, currency: "EUR"}.
+enrich_amount: Cleans "Total: 1.240,50€" into {amount: 1240.50, currency: "EUR"}.
 
-enrich_date: Resolves "next Friday at 5pm" with Timezone awareness.
+enrich_date: Resolves human-readable dates ("next Friday at 5pm") with Timezone awareness.
 
-enrich_address: Standardizes global messy addresses.
+enrich_address: Standardizes global messy addresses into structured components.
 
 accounting_map: Maps concepts to ES PGC, US GAAP, or IFRS.
 
@@ -81,5 +83,5 @@ Python SDK: pip install etld.
 
 n8n Nodes: Available in the n8n community as n8n-nodes-etld.
 
-License
+⚖️ License
 MIT - Created by Pablixnieto2

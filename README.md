@@ -1,6 +1,6 @@
 # ETL-D MCP Server 🌊
 
-[![npm version](https://img.shields.io/npm/v/@pablixnieto2/etld-mcp-server?color=blue)](https://www.npmjs.com/package/@pablixnieto2/etld-mcp-server)
+[![npm version](https://img.shields.io/npm/v/@pablixnieto2/etld-mcp-server?color=blue)](https://www.npmjs.com/package/etld-mcp-server)
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-Official-success)](https://registry.modelcontextprotocol.io/pablixnieto2/etld-mcp-server)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 

@@ -44,15 +44,15 @@ The ETL-D engine processes every request through a strict hierarchy:
 }
 ```
 
-🔑 How to Get an API Key?
-Option A: Manual Purchase (Human)
+## 🔑 How to Get an API Key?
+* **Option A:** Manual Purchase (Human)
 Get a Starter Pack ($5 / 5,000 credits) or a Subscription at api.etl-d.net.
 
-Option B: Zero-Touch Provisioning (Agent-Led) 🤖
+* **Option B:** Zero-Touch Provisioning (Agent-Led) 🤖
 If you don't have a key, simply ask Claude: "I don't have an ETL-D key, can you help me get one?".
 The agent will call the /provision tool, generate a Stripe Checkout link for you, and automatically set up the key once paid. Zero-touch, human-in-the-loop.
 
-🛠️ Available MCP Tools
+## 🛠️ Available MCP Tools
 1. Financial & B2B Heavy Lifting
 parse_bank_statement: Support for Spanish Norma 43 (N43). Turns raw bank files into clean JSON.
 
@@ -76,12 +76,12 @@ enrich_address: Standardizes global messy addresses into structured components.
 
 accounting_map: Maps concepts to ES PGC, US GAAP, or IFRS.
 
-🏗️ Ecosystem
+## 🏗️ Ecosystem
 Cloud Engine: Hosted at api.etl-d.net (Python/FastAPI).
 
 Python SDK: pip install etld.
 
 n8n Nodes: Available in the n8n community as n8n-nodes-etld.
 
-⚖️ License
+## ⚖️ License
 MIT - Created by Pablixnieto2

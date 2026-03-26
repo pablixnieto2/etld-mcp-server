@@ -26,7 +26,7 @@ The ETL-D engine processes every request through a strict hierarchy:
 ## 🚀 Quick Start (Claude Desktop)
 
 1. Open your `claude_desktop_config.json`.
-2. Add the **ETL-D** server (Ensure you use version `3.2.3`):
+2. Add the **ETL-D** server (Ensure you use version `3.3.3`):
 
 ```json
 {
@@ -35,7 +35,7 @@ The ETL-D engine processes every request through a strict hierarchy:
       "command": "npx",
       "args": [
         "-y",
-        "@pablixnieto2/etld-mcp-server@3.2.3"
+        "@pablixnieto2/etld-mcp-server@3.3.3"
       ],
       "env": {
         "ETLD_API_KEY": "YOUR_API_KEY_HERE"
